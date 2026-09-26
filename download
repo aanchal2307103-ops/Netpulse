@@ -1,0 +1,19 @@
+# Build output
+target/
+*.class
+
+# SQLite database created at runtime
+*.db
+*.db-journal
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# OS files
+.DS_Store
+Thumbs.db
