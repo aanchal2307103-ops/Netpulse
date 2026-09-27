@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Google DNS",
+    "host": "8.8.8.8",
+    "port": 443,
+    "type": "IP_ADDRESS",
+    "intervalSeconds": 10
+  },
+  {
+    "name": "Example Website",
+    "host": "example.com",
+    "port": 443,
+    "type": "WEBSITE",
+    "intervalSeconds": 15
+  },
+  {
+    "name": "Local SSH Server",
+    "host": "192.168.1.10",
+    "port": 22,
+    "type": "SERVER",
+    "intervalSeconds": 20
+  }
+]
