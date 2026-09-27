@@ -4,11 +4,7 @@ import com.netpulse.ui.MainView;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
-/**
- * Week 1 (C and Java Compilation; Introduction to Java Syntax):
- * A standard Java program entry point (public static void main), here
- * handing control to the JavaFX lifecycle via Application.launch(...).
- */
+
 public class Main extends Application {
 
     private MainView mainView;
