@@ -1,20 +1,4 @@
-# NetPulse — Network Diagnostic & Monitoring Dashboard
 
-A desktop JavaFX application that lets you add multiple servers, websites,
-and IP endpoints, then monitors their uptime, response latency, and
-connection stability in real time — without freezing the GUI — using
-background multithreading, a SQLite database, and JSON import/export.
-
-## How the project maps to the weekly plan
-
-| Week | Topic | Where it shows up in this project |
-|---|---|---|
-| 1 | C/Java compilation, Java syntax, OOP | `Main.java` entry point; `model/` package (classes, enums, a record, encapsulation) |
-| 2 | Git & version control | Project is structured as a normal Maven repo, ready to `git init`; see **Next steps** below |
-| 3 | Desktop GUI with JavaFX | `ui/MainView.java`, `ui/AddEndpointDialog.java` — Stage/Scene, BorderPane/HBox/VBox layouts, TableView, LineChart, event handling, with styling handled directly through JavaFX APIs in Java code |
-| 4 | Multithreading & concurrency | `service/NetworkProbeService.java` — `ScheduledExecutorService`, one repeating task per endpoint, `Platform.runLater` for safe background→UI updates |
-| 6 | SQLite + JavaFX | `service/DatabaseManager.java` — JDBC connection, table creation, insert/update/delete/query for endpoints and probe history |
-| 7 | JSON parsing & API handling | `service/JsonConfigManager.java` — import/export endpoint lists as JSON, plus an ad-hoc JSON API probe (parses a live HTTP JSON response) |
 
 ## Project structure
 
