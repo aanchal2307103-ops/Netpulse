@@ -16,11 +16,7 @@ import javafx.stage.Stage;
 
 import java.util.Optional;
 
-/**
- * Week 3 (Desktop GUI Development with JavaFX):
- * A small modal Stage with basic controls (TextField, ComboBox, Spinner)
- * and layout (GridPane), used to collect input for a new Endpoint.
- */
+
 public class AddEndpointDialog {
 
     /** Shows the dialog and blocks until the user closes it; returns the new Endpoint, or empty if cancelled. */
