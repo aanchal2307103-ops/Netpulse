@@ -8,15 +8,6 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Week 6 (Relational Database with SQLite and JavaFX):
- * Handles the JDBC connection to a local SQLite file, table creation, and
- * CRUD-style operations (insert, update, delete, query) for endpoints and
- * their probe history.
- *
- * All public methods are synchronized because they are called concurrently
- * from multiple background probe threads (Week 4: shared-resource safety).
- */
 public class DatabaseManager {
 
     private static final String DB_URL = "jdbc:sqlite:netpulse.db";
