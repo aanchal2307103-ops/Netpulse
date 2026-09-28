@@ -2,14 +2,7 @@ package com.netpulse.model;
 
 import javafx.beans.property.*;
 
-/**
- * Week 1 (Java Syntax / OOP): a plain-old Java object showing fields, a
- * constructor, encapsulated access via getters/setters, and core OOP design.
- *
- * JavaFX "Property" wrappers are used instead of plain fields so that a
- * TableView can bind directly to this object and refresh automatically
- * whenever a background probe thread updates the status/latency
- * (Week 3: JavaFX controls & data binding).
+
  */
 public class Endpoint {
 
