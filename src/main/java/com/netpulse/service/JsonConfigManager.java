@@ -17,24 +17,7 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Week 7 (JSON Parsing and API Response Handling with Java):
- *
- *  1. importConfig()/exportConfig(): read/write a list of monitored
- *     endpoints as a JSON array on disk, so a dashboard layout can be
- *     shared or backed up outside the database.
- *  2. probeJsonApi(): calls a real HTTP JSON API (used as an optional
- *     "API endpoint" probe type), parses the raw response body into a
- *     JSONObject, and converts a couple of fields into an
- *     application-friendly Java record for display.
- */
-public class JsonConfigManager {
 
-    private final HttpClient httpClient = HttpClient.newBuilder()
-            .connectTimeout(Duration.ofSeconds(5))
-            .build();
-
-    /** Reads endpoints.json (a JSON array) and converts it into Endpoint objects. */
     public List<Endpoint> importConfig(Path jsonFile) throws IOException {
         String content = Files.readString(jsonFile, StandardCharsets.UTF_8);
         JSONArray array = new JSONArray(content);
