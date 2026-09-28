@@ -36,20 +36,7 @@ import java.nio.file.Path;
 import java.util.List;
 import java.util.Optional;
 
-/**
- * Week 3 (Desktop GUI Development with JavaFX):
- * Builds the whole scene graph in plain Java (stages, layouts such as
- * BorderPane/HBox/VBox, controls such as TableView/LineChart/Button, and
- * event handling via setOnAction), with no external CSS file — this class
- * IS the dashboard.
- *
- * It also ties together every other week's topic:
- *  - Week 4: starts/stops per-endpoint background probes via NetworkProbeService
- *    and reacts to results delivered safely on the JavaFX thread.
- *  - Week 6: persists endpoints and probe history through DatabaseManager (SQLite).
- *  - Week 7: imports/exports JSON configs and runs an ad-hoc JSON API probe
- *    through JsonConfigManager.
- */
+
 public class MainView {
 
     private final Stage stage;
