@@ -1,10 +1,6 @@
 package com.netpulse.model;
 
-/**
- * Week 1 (OOP basics): an immutable data-carrier object (POJO) produced by a
- * background probe thread and later persisted as a row in the SQLite
- * health_logs table (Week 6).
- */
+
 public class ProbeResult {
 
     private final int endpointId;
